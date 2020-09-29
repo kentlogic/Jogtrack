@@ -1,0 +1,59 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/primaryColor</item>
+
+        <!-- Original AppCompat attributes. -->
+        <item name="colorPrimary">@color/darkGray</item>
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/primaryColor</item>
+        <item name="colorError">@color/errorColor</item>
+
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorPrimaryVariant">@color/darkGray</item>
+         <!--> toolbar color -->
+
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+
+
+    <style name="TextInputLine" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/input_box_stroke</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="hintTextColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+
+    <style name="ItemJogLabel" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItemJogSubLabel" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+</resources>
